@@ -1,0 +1,59 @@
+{
+    "monthlyUsageEstimates": [
+        {
+            "month": "April",
+            "year": "2017",
+            "estimateEnergyUsageInKwh": 307
+        },
+        {
+            "month": "May",
+            "year": "2017",
+            "estimateEnergyUsageInKwh": 235
+        },
+        {
+            "month": "June",
+            "year": "2017",
+            "estimateEnergyUsageInKwh": 169
+        },
+        {
+            "month": "July",
+            "year": "2017",
+            "estimateEnergyUsageInKwh": 132
+        },
+        {
+            "month": "August",
+            "year": "2017",
+            "estimateEnergyUsageInKwh": 167
+        },
+        {
+            "month": "September",
+            "year": "2017",
+            "estimateEnergyUsageInKwh": 157
+        },
+        {
+            "month": "October",
+            "year": "2017",
+            "estimateEnergyUsageInKwh": 251
+        },
+        {
+            "month": "November",
+            "year": "2017",
+            "estimateEnergyUsageInKwh": 358
+        },
+        {
+            "month": "December",
+            "year": "2017",
+            "estimateEnergyUsageInKwh": 281
+        },
+        {
+            "month": "January",
+            "year": "2018",
+            "estimateEnergyUsageInKwh": 339
+        },
+        {
+            "month": "February",
+            "year": "2018",
+            "estimateEnergyUsageInKwh": 329
+        }
+    ]
+}

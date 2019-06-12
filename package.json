@@ -1,0 +1,44 @@
+{
+  "name": "service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "serve": "node dist/index.js",
+    "test": "jest",
+    "watch-tests": "jest --watch",
+    "watch-node": "nodemon dist/index.js",
+    "start": "concurrently --kill-others -c \"yellow.bold,cyan.bold,green.bold\" \"tsc -w\" \"yarn watch-node\""
+  },
+  "dependencies": {
+    "@types/moment": "^2.13.0",
+    "koa": "2.5.1",
+    "koa-router": "7.4.0",
+    "moment": "^2.24.0",
+    "sqlite3": "4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/chai": "^4.1.7",
+    "@types/jest": "24.0.0",
+    "@types/koa": "^2.0.48",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-router": "^7.0.40",
+    "@types/node": "^11.11.0",
+    "@types/sqlite3": "^3.1.5",
+    "babel-jest": "^24.8.0",
+    "concurrently": "^4.1.0",
+    "jest": "24.0.0",
+    "koa-bodyparser": "^4.2.1",
+    "nodemon": "^1.18.10",
+    "ts-jest": "24.0.0",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.5.1"
+  },
+  "prettier": {
+    "singleQuote": true
+  }
+}
