@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "module": "commonjs",
+    "target": "es5",
+    "moduleResolution": "node",
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "declaration": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+  },
+  "include": [
+    "src/**/*",
+    "__tests__/index.spec.ts",
+    "__tests__/data.spec.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ],
+}
