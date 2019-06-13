@@ -14,7 +14,7 @@
   },
   "include": [
     "src/**/*",
-    "__tests__/index.spec.ts",
+    "__tests__/server.spec.ts",
     "__tests__/data.spec.ts"
   ],
   "exclude": [

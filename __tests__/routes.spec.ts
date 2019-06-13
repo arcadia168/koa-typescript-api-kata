@@ -1,7 +1,7 @@
 import 'jest';
 import * as request from 'supertest';
 import * as data from '../src/data';
-import server from '../src/index';
+import server from '../src/server';
 import { config } from '../src/config';
 import * as path from 'path';
 import * as fs from 'fs';
