@@ -6,8 +6,8 @@
   "scripts": {
     "build": "tsc",
     "deploy": "yarn build; cp dist/server.js ./; gcloud app deploy",
-    "serve": "node dist/server.js",
-    "start": "node dist/server.js",
+    "serve": "yarn install; yarn build; node dist/server.js",
+    "start": "yarn install; yarn build; yarn serve",
     "test": "jest",
     "watch-tests": "jest --watch",
     "watch-node": "nodemon dist/server.js"
@@ -15,6 +15,7 @@
   "dependencies": {
     "@types/moment": "^2.13.0",
     "koa": "2.5.1",
+    "koa-bodyparser": "^4.2.1",
     "koa-router": "7.4.0",
     "moment": "^2.24.0",
     "sqlite3": "4.0.0"
@@ -34,7 +35,6 @@
     "babel-jest": "^24.8.0",
     "concurrently": "^4.1.0",
     "jest": "24.0.0",
-    "koa-bodyparser": "^4.2.1",
     "nodemon": "^1.18.10",
     "supertest": "^4.0.2",
     "ts-jest": "24.0.0",
