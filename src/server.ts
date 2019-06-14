@@ -4,8 +4,6 @@ import router from './routes';
 import { config } from './config';
 import { initialize } from './data';
 
-const PORT = process.env.PORT || 3000;
-
 export default function createServer() {
   const server = new Koa();
 

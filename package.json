@@ -1,16 +1,16 @@
 {
   "name": "service",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/server.js",
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "deploy": "",
+    "deploy": "yarn build; cp dist/server.js ./; gcloud app deploy",
     "serve": "node dist/server.js",
+    "start": "node dist/server.js",
     "test": "jest",
     "watch-tests": "jest --watch",
-    "watch-node": "nodemon dist/index.js",
-    "start": "concurrently --kill-others -c \"yellow.bold,cyan.bold,green.bold\" \"tsc -w\" \"yarn watch-node\""
+    "watch-node": "nodemon dist/server.js"
   },
   "dependencies": {
     "@types/moment": "^2.13.0",
