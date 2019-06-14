@@ -5,9 +5,9 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "deploy": "yarn build; cp dist/server.js ./; gcloud app deploy",
-    "serve": "yarn install; yarn build; node dist/server.js",
-    "start": "yarn install; yarn build; yarn serve",
+    "deploy": "yarn install; yarn build; cp dist/server.js ./; gcloud app deploy",
+    "serve": "node dist/server.js",
+    "start": "yarn install; yarn serve",
     "test": "jest",
     "watch-tests": "jest --watch",
     "watch-node": "nodemon dist/server.js"
