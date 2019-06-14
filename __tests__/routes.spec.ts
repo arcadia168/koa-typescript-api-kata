@@ -39,9 +39,11 @@ describe('routes', () => {
         };
 
         try {
-            await request(instance)
+            const response = await request(instance)
                 .post('/recordmeterreading')
                 .send(newTestReadingToInsert);
+
+            expect(response.status).toEqual(200);
 
             data.connection.serialize(() => {
                 data.connection.all(

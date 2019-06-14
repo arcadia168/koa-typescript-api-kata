@@ -33,6 +33,8 @@ router.post('/recordmeterreading', async (ctx, next) => {
   if (meterReadingToWrite) {
     try {
       await data.writeMeterReading(meterReadingToWrite);
+      ctx.status = 200;
+      next();
     } catch (postReadingError) {
       const writingError =
         new Error(
