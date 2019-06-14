@@ -8,6 +8,11 @@ For this project I did a few things:
 1.  Developed a meter readings API.
 2.  Changed how monthly usage is calculated and exposed this via an endpoint in the REST API.
 
+You can access the REST API endpoints running on a Node.js App Service on Google Cloud here:
+- Get meter readings: https://koa-typescript-api-exercise.appspot.com/readings
+- Get estimated monthly energy usages: https://koa-typescript-api-exercise.appspot.com/estimatedmonthlyusages
+- Post new meter readings to the API to be temporarily stored: https://koa-typescript-api-exercise.appspot.com/recordmeterreading
+
 ## Tasks
 
 ### Created a meter reading API
